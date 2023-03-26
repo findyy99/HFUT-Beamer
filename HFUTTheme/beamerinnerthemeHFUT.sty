@@ -5,7 +5,7 @@
 
 
 
-
+% tue 可能是指荷兰的 Eindhoven 科技大学（Technische Universiteit Eindhoven）的缩写
   \definecolor{tuered}{HTML}{FF0000}
     \definecolor{tueScharlaken}{HTML}{C81919} % main color!
     \definecolor{tuedarkblue}{HTML}{000000}
@@ -42,6 +42,13 @@
   \end{tikzpicture}
 }
 
+% —---------------------注释From ChatGPT-----------------
+% \setbeamertemplate{background}{...} 声明演示文稿的背景模板，并在大括号中定义了一个 TikZ 图形来实现背景。
+% \begin{tikzpicture} ... \end{tikzpicture} 开始和结束了一个用于绘制背景的基本画布区域。
+% \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight); 确定了绘图区域的范围，使用整个页面的大小作为边界框架。
+% \fill[color=white] (0,7) rectangle (\the\paperwidth,\the\paperheight); 在画布上用白色填充矩形，将顶部的 7cm 高度作为标题栏留出来不被覆盖。
+% \ifnum\thepage>1\relax% ... \fi 使用条件语句检查是否是第一页。如果是第一页，只显示头部 7cm 高度的白色区域；如果不是第一页，则使用白色透明度填充整个页面。
+% 因此，这段代码的作用是在演示文稿页上创建一个背景模板，其中包含一个白色矩形，避免了文字与背景色之间的干扰，并在第一页只显示标题栏以上的内容。
 
 
 
