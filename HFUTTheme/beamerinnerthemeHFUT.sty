@@ -56,52 +56,52 @@
 \defbeamertemplate*{title page}{HFUT}[1][]
 {   
 \vskip1.5cm%
-  \begingroup
-   \begin{columns}
-   \column{0.4\paperwidth}% Create an empty row 
-   \mbox{}
-   \column{0.60\paperwidth}% in the second row put the title
+\begingroup
+  \begin{columns}
+    \column{0.4\paperwidth}% Create an empty row 
+    \mbox{}
+    \column{0.60\paperwidth}% in the second row put the title
 
-\begin{beamercolorbox}[wd=0.6\paperwidth,center, sep=10pt,#1]{title page header}
-	\usebeamerfont{title}\inserttitle\par%
-	\end{beamercolorbox}%
+      \begin{beamercolorbox}[wd=0.6\paperwidth,center, sep=10pt,#1]{title page header}
+      \usebeamerfont{title}\inserttitle\par%
+      \end{beamercolorbox}%
     \vskip0.5cm%
-    \begin{beamercolorbox}[wd=0.6\paperwidth,center, #1]{author}
-      \usebeamerfont{author}\insertauthor%
-    \end{beamercolorbox}
-     \vskip0.5cm%
-     \begin{beamercolorbox}[wd=0.6\paperwidth,center, #1]{institute}
-      \usebeamerfont{author}\insertinstitute
-    \end{beamercolorbox}
+      \begin{beamercolorbox}[wd=0.6\paperwidth,center, #1]{author}
+        \usebeamerfont{author}\insertauthor%
+      \end{beamercolorbox}
     \vskip0.5cm%
-    %\begin{beamercolorbox}[wd=0.65\paperwidth, center, #1]{date}
-    %  \usebeamerfont{institute}\insertdate%
-    %\end{beamercolorbox}
-    
-   \end{columns}
-  \endgroup
-  \vfill    
-  \begin{tikzpicture}[remember picture,overlay] 
-\begin{scope}[on background layer]
-\node [anchor=west, inner sep=0pt] at ([xshift=-110pt, yshift=-11.9pt]current page.west){\includegraphics[height=0.805\paperheight]{./HFUTTheme/HFUT.jpg}};
-\end{scope}
+      \begin{beamercolorbox}[wd=0.6\paperwidth,center, #1]{institute}
+        \usebeamerfont{author}\insertinstitute
+      \end{beamercolorbox}
+    \vskip0.5cm%
+  \end{columns}
+\endgroup
+\vfill    
+\begin{tikzpicture}[remember picture,overlay]
+
+  \begin{scope}[on background layer]
+    \node [anchor=west, inner sep=0pt] at ([xshift=-110pt, yshift=-11.9pt]current page.west){\includegraphics[height=0.805\paperheight]{./HFUTTheme/HFUT.jpg}};
+  \end{scope}
+
     % HFUT logo
 	\node [anchor=south west, inner sep=0pt] at ([xshift=20pt, yshift=-35pt]current page.north west){\includegraphics[height=1.1cm]{./HFUTTheme/HFUT_Logo.png}};
+
 	% Group logo
 	 \node [anchor=north east, inner sep=0pt]  at ([xshift = -0.3cm, yshift=-0.18cm]current page.north east){\includegraphics[height=0.9cm]{./HFUTTheme/HFUTci.png}}; 
+  
 	 % top and bottom lines
 	\draw[HFUTred] ([xshift = 0pt, yshift=-35pt]current page.north west) -- ([xshift = 0pt, yshift=-35pt]current page.north east);
 	\draw[HFUTred] ([xshift = 0pt, yshift=13pt]current page.south west) -- ([xshift = 0pt, yshift=13pt]current page.south east);
 	% Red shape
 	%\draw[fill=HFUTred,HFUTred]  ([xshift = 0pt, yshift=-35pt]current page.north west) -- ([xshift = 0pt, yshift=0pt]current page.south west) -- ([xshift = 40pt, yshift=0pt]current page.south west) -- ([xshift = 114pt, yshift=-35pt]current page.north west) -- cycle;
-       % white shape
+  
+  % white shape
 	\draw[fill=white,white]  ([xshift = 190pt, yshift=-35.5pt]current page.north west) -- ([xshift = 202.5pt, yshift=-35.5pt]current page.north west) -- ([xshift = 202.5pt, yshift=13.4pt]current page.south west) -- ([xshift =130pt, yshift=13.4pt]current page.south west) -- cycle;
-
-%\node [anchor=south west, inner sep=0pt] at ([xshift=-50pt, yshift=20pt]current page.south west){\includegraphics[height=7cm]{./HFUTTheme/hfut.jpeg}};
-	
 	
 	% slogan HFUT 
 	\node [anchor=west, inner sep=0pt, tuedarkblue, font=\scriptsize]  at ([xshift = 20pt, yshift=6pt]current page.south west){{\textbf{厚德、笃学、崇实、尚新 }}};
- 	\end{tikzpicture}
-          }
+\end{tikzpicture}
+
+% 'defbeamertemplate' end
+}
 \mode<all>
