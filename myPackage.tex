@@ -7,80 +7,20 @@
 
 % Chinese Package
 \usepackage{xeCJK} %导入中文包
-\setCJKmainfont{SimHei} %中文字体采用黑体
-\setCJKsansfont{simhei.ttf} % for \textsf  Microsoft YaHei
+\setCJKmainfont{SimSong} %中文字体采用简宋
+\setCJKsansfont{SimSong} % for \textsf  Times New Roman
 %设置英文字体
 %设置英文字体
-\setsansfont{Microsoft YaHei}
-\setmainfont{Microsoft YaHei}
+\setsansfont{Times New Roman}
+\setmainfont{Times New Roman}
 
-
-%\setCJKmainfont[BoldFont={Adobe Heiti Std},ItalicFont={Adobe Kaiti Std}]{SimSun}
-
-
-%\setCJKmainfont[ItalicFont={楷体_GB2312}, BoldFont={黑体}]{宋体} %衬线字体 缺省中文字体为
-%\setCJKsansfont{黑体}        %serif是有衬线字体sans serif无衬线字体。
-%\setCJKmonofont{仿宋_GB2312} %中文等宽字体
 %%-----------------------xeCJK下设置中文字体------------------------------%
-\setCJKfamilyfont{song}{SimSun}                             %宋体 song
-\newcommand{\song}{\CJKfamily{song}}                        % 宋体   (Windows自带simsun.ttf)
-%\setCJKfamilyfont{xs}{NSimSun}                              %新宋体 xs
-%\newcommand{\xs}{\CJKfamily{xs}}
-%\setCJKfamilyfont{fs}{FangSong_GB2312}                      %仿宋2312 fs
-%\newcommand{\fs}{\CJKfamily{fs}}                            %仿宋体 (Windows自带simfs.ttf)
-\setCJKfamilyfont{kai}{KaiTi_GB2312}                        %楷体2312  kai
-\newcommand{\kai}{\CJKfamily{kai}}                          
-\setCJKfamilyfont{yh}{Microsoft YaHei}                    %微软雅黑 yh
-\newcommand{\yh}{\CJKfamily{yh}}
-\setCJKfamilyfont{hei}{SimHei}                                    %黑体  hei
-\newcommand{\hei}{\CJKfamily{hei}}                          % 黑体   (Windows自带simhei.ttf)
-\setCJKfamilyfont{msunicode}{Arial Unicode MS}            %Arial Unicode MS: msunicode
-\newcommand{\msunicode}{\CJKfamily{msunicode}}
-\setCJKfamilyfont{li}{LiSu}                                            %隶书  li
-\newcommand{\li}{\CJKfamily{li}}
-\setCJKfamilyfont{yy}{YouYuan}                             %幼圆  yy
-\newcommand{\yy}{\CJKfamily{yy}}
-\setCJKfamilyfont{xm}{MingLiU}                                        %细明体  xm
-\newcommand{\xm}{\CJKfamily{xm}}
-\setCJKfamilyfont{xxm}{PMingLiU}                             %新细明体  xxm
-\newcommand{\xxm}{\CJKfamily{xxm}}
-
-\setCJKfamilyfont{hwsong}{STSong}                            %华文宋体  hwsong
-\newcommand{\hwsong}{\CJKfamily{hwsong}}
-\setCJKfamilyfont{hwzs}{STZhongsong}                        %华文中宋  hwzs
-\newcommand{\hwzs}{\CJKfamily{hwzs}}
-\setCJKfamilyfont{hwfs}{STFangsong}                            %华文仿宋  hwfs
-\newcommand{\hwfs}{\CJKfamily{hwfs}}
-\setCJKfamilyfont{hwxh}{STXihei}                                %华文细黑  hwxh
-\newcommand{\hwxh}{\CJKfamily{hwxh}}
-\setCJKfamilyfont{hwl}{STLiti}                                        %华文隶书  hwl
-\newcommand{\hwl}{\CJKfamily{hwl}}
-\setCJKfamilyfont{hwxw}{STXinwei}                                %华文新魏  hwxw
-\newcommand{\hwxw}{\CJKfamily{hwxw}}
-\setCJKfamilyfont{hwk}{STKaiti}                                    %华文楷体  hwk
-\newcommand{\hwk}{\CJKfamily{hwk}}
-\setCJKfamilyfont{hwxk}{STXingkai}                            %华文行楷  hwxk
-\newcommand{\hwxk}{\CJKfamily{hwxk}}
-\setCJKfamilyfont{hwcy}{STCaiyun}                                 %华文彩云 hwcy
-\newcommand{\hwcy}{\CJKfamily{hwcy}}
-\setCJKfamilyfont{hwhp}{STHupo}                                 %华文琥珀   hwhp
-\newcommand{\hwhp}{\CJKfamily{hwhp}}
-
-\setCJKfamilyfont{fzsong}{Simsun (Founder Extended)}     %方正宋体超大字符集   fzsong
-\newcommand{\fzsong}{\CJKfamily{fzsong}}
-\setCJKfamilyfont{fzyao}{FZYaoTi}                                    %方正姚体  fzy
-\newcommand{\fzyao}{\CJKfamily{fzyao}}
-\setCJKfamilyfont{fzshu}{FZShuTi}                                    %方正舒体 fzshu
-\newcommand{\fzshu}{\CJKfamily{fzshu}}
-
-\setCJKfamilyfont{asong}{Adobe Song Std}                        %Adobe 宋体  asong
-\newcommand{\asong}{\CJKfamily{asong}}
-\setCJKfamilyfont{ahei}{Adobe Heiti Std}                            %Adobe 黑体  ahei
-\newcommand{\ahei}{\CJKfamily{ahei}}
-\setCJKfamilyfont{akai}{Adobe Kaiti Std}                            %Adobe 楷体  akai
-\newcommand{\akai}{\CJKfamily{akai}}
-
+\setCJKfamilyfont{song}{SimSong}                            % 简宋
+\newcommand{\song}{\CJKfamily{song}}                        
+\setCJKfamilyfont{hei}{SimHei}                              % 黑体
+\newcommand{\hei}{\CJKfamily{hei}}                          
 %------------------------------设置字体大小------------------------%
+% 在我们使用 \fontsize 命令设置字体大小和行距后，需要使用 \selectfont 命令来激活这些更改
 \newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     %初号
 \newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} %小初号
 \newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      %一号
