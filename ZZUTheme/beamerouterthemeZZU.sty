@@ -1,0 +1,41 @@
+% ----------注释 From ChatGPT---------
+% 用于定制演示文稿中最外层的样式。具体来说，它负责定制幻灯片中每一页的页眉、页脚、背景、边框等元素的样式
+\mode<presentation>
+\defbeamertemplate*{frametitle}{ZZU}[1][]
+{
+ 
+     \definecolor{ZZUred}{HTML}{C32300}  % main color!
+
+  \definecolor{tuered}{HTML}{FF0000}
+    \definecolor{tueScharlaken}{HTML}{C81919} % main color!
+    \definecolor{tuedarkblue}{HTML}{000000}
+    \definecolor{tueblue}{HTML}{101073} % old color
+    \definecolor{tuepink}{HTML}{D6004A}
+
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1cm]{frametitle} 
+  \begin{tikzpicture}[remember picture,overlay]
+
+ % ZZU logo
+ \node [anchor=north west, inner sep=0pt]  at ([xshift = 10pt, yshift=-2pt]current page.north west){\includegraphics[height=.7cm]{./ZZUTheme/ZZU_Logo.png}}; 
+ % top line
+\draw[tueScharlaken] ([xshift = 0pt, yshift=-22pt]current page.north west) -- ([xshift = 0pt, yshift=-22pt]current page.north east);
+% bottom line and shape for page number
+\draw[fill=ZZUred,ZZUred]  ([xshift = 0pt, yshift=0pt]current page.south west) -- ([xshift = 20pt, yshift=0pt]current page.south west) -- ([xshift = 25pt, yshift=15pt]current page.south west) -- ([xshift = 0pt, yshift=15pt]current page.south west) -- cycle;
+% frame title
+ \node [anchor=north west , inner sep=0pt, tuedarkblue, font=\Large]  at ([xshift = 10pt, yshift=-28pt]current page.north west){\insertframetitle}; 
+
+
+\node [anchor=south, inner sep=0pt,white, font=\scriptsize]  at ([xshift = 11pt, yshift=3pt]current page.south west){{\insertframenumber/\inserttotalframenumber}};
+
+
+\node [anchor=west, inner sep=0pt,black,  font=\scriptsize]  at ([xshift = 160pt, yshift=8pt]current page.south west){{ \statustext}};
+\node [anchor=west, inner sep=0pt, black, font=\scriptsize]  at ([xshift = -80pt, yshift=8pt]current page.south east){{ \today}};
+
+
+  \end{tikzpicture}
+  \end{beamercolorbox}
+}
+  \newcommand{\statustext}{}
+\newcommand{\setstatustext}[1]{\renewcommand{\statustext}{#1}}
+
+\mode<all>

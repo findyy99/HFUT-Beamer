@@ -3,7 +3,7 @@
 \mode<presentation>
 
 
-  \definecolor{HFUTred}{HTML}{a8000c} % main color!
+  \definecolor{ZZUred}{HTML}{C32300} % main color!
 
 
 
@@ -17,16 +17,16 @@
 
  
 % to make blocks more colorful LK
-\setbeamercolor{block title}{use=structure,fg=white,bg=HFUTred}
-\setbeamercolor{block body}{use=structure,fg=black,bg=HFUTred!5}
+\setbeamercolor{block title}{use=structure,fg=white,bg=ZZUred}
+\setbeamercolor{block body}{use=structure,fg=black,bg=ZZUred!5}
 \setbeamercolor{block title alerted}{use=structure,fg=white,bg=tueblue}
 \setbeamercolor{block body alerted}{use=structure,fg=black,bg=tueblue!5}
 \setbeamercolor{block title example}{use=structure,fg=white,bg=tuedarkblue}
 \setbeamercolor{block body example}{use=structure,fg=black,bg=tuedarkblue!5}
 \setbeamertemplate{blocks}[rounded][shadow=true]
 % change color for itemize
-\setbeamercolor{itemize item}{fg=HFUTred} 
-\setbeamercolor{itemize subitem}{fg=HFUTred}
+\setbeamercolor{itemize item}{fg=ZZUred} 
+\setbeamercolor{itemize subitem}{fg=ZZUred}
 
 
 
@@ -55,7 +55,7 @@
 
 
 % Title page}
-\defbeamertemplate*{title page}{HFUT}[1][]
+\defbeamertemplate*{title page}{ZZU}[1][]
 {   
 \vskip1.5cm%
 \begingroup
@@ -82,25 +82,20 @@
 \begin{tikzpicture}[remember picture,overlay]
 
   \begin{scope}[on background layer]
-    \node [anchor=west, inner sep=0pt] at ([xshift=-21pt, yshift=-10.9pt]current page.west){\includegraphics[height=0.805\paperheight]{./HFUTTheme/ZZU.jpg}};
+    \node [anchor=west, inner sep=0pt] at ([xshift=-21pt, yshift=-10.9pt]current page.west){\includegraphics[height=0.805\paperheight]{./ZZUTheme/ZZU.jpg}};
   \end{scope}
 
-    % HFUT logo
-	\node [anchor=south west, inner sep=0pt] at ([xshift=20pt, yshift=-30pt]current page.north west){\includegraphics[height=0.9cm]{./HFUTTheme/ZZU_Logo.png}};
-
-	% Group logo
-	%  \node [anchor=north east, inner sep=0pt]  at ([xshift = -0.3cm, yshift=-0.18cm]current page.north east){\includegraphics[height=0.9cm]{./HFUTTheme/HFUTci.png}}; 
+    % ZZU logo
+	\node [anchor=south west, inner sep=0pt] at ([xshift=20pt, yshift=-30pt]current page.north west){\includegraphics[height=0.9cm]{./ZZUTheme/ZZU_Logo.png}};
   
 	 % top and bottom lines
-	\draw[HFUTred] ([xshift = 0pt, yshift=-32pt]current page.north west) -- ([xshift = 0pt, yshift=-32pt]current page.north east);
-	\draw[HFUTred] ([xshift = 0pt, yshift=13pt]current page.south west) -- ([xshift = 0pt, yshift=13pt]current page.south east);
-	% Red shape
-	%\draw[fill=HFUTred,HFUTred]  ([xshift = 0pt, yshift=-35pt]current page.north west) -- ([xshift = 0pt, yshift=0pt]current page.south west) -- ([xshift = 40pt, yshift=0pt]current page.south west) -- ([xshift = 114pt, yshift=-35pt]current page.north west) -- cycle;
+	\draw[ZZUred] ([xshift = 0pt, yshift=-32pt]current page.north west) -- ([xshift = 0pt, yshift=-32pt]current page.north east);
+	\draw[ZZUred] ([xshift = 0pt, yshift=13pt]current page.south west) -- ([xshift = 0pt, yshift=13pt]current page.south east);
   
   % white shape
 	\draw[fill=white,white]  ([xshift = 230pt, yshift=-35pt]current page.north west) -- ([xshift = 245pt, yshift=-35pt]current page.north west) -- ([xshift = 245pt, yshift=13.4pt]current page.south west) -- ([xshift =170pt, yshift=13.4pt]current page.south west) -- cycle;
 	
-	% slogan HFUT 
+	% slogan ZZU 
 	\node [anchor=west, inner sep=0pt, tuedarkblue, font=\scriptsize]  at ([xshift = 70pt, yshift=6pt]current page.south west){{\textbf{求是~~~担当}}};
 \end{tikzpicture}
 
